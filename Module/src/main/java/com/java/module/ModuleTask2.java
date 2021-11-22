@@ -2,13 +2,22 @@ package main.java.com.java.module;
 
 public class ModuleTask2 {
     public static void main(String[] args) {
+        // шахматная доска двумерный массив [7][7]
+        //   0| 1 2 3 4 5 6 7
+        //   1| - - - - - - -
+        //   2| - - - - - - -
+        //   3| - - - - - - -
+        //   4| - - - - - - -
+        //   5| - - - - - - -
+        //   6| - - - - - - -
+        //   7| - - - - - - -
         // ПОЗИЦИЯ ГДЕ СТОИТ КОНЬ
-        int x = 0;
-        int y = 0;
-        // ПОЗИЦИЯ ДЛЯ ПРОВЕРКИ МОЖЕТ ЛИ ПОЙТИ КОНЬ СЮДА
+        int x = 7;
+        int y = 7;
+        // ПОЗИЦИЯ ДЛЯ ПРОВЕРКИ МОЖЕТ ЛИ ПОЙТИ КОНЬ СЮДА  - КООРДИНАТЫ МОГУТ БЫТЬ ТОЛЬКО >0;
         int hodX = 2; //
         int hodY = 1; //
-        // ТРУ если может, фолс если нет
+        // TRUE если может, FALSE если нет
         System.out.println(yesOrNo(x,y,hodX,hodY));
     }
     public static boolean yesOrNo(int x, int y, int hodX, int hodY) {
